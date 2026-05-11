@@ -1,6 +1,16 @@
 # Adicionar titulo em MP3 via nome do arquivo
 
 ```sh
+sudo apt update
+
+# Instala Python3 + pip (caso não tenha)
+sudo apt install -y python3 python3-pip
+
+# Instala a lib mutagen
+pip3 install mutagen
+python3 -m venv venv
+source venv/bin/activate
+
 pip install mutagen
 python3 adicionar_titulo.py
 ```
